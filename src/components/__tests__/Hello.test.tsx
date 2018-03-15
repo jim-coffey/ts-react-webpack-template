@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { shallow } from 'enzyme';
 
-import { HelloProps, Hello } from '../Hello';
+import { IHelloProps, Hello } from '../Hello';
 
 describe('<Hello />', () => {
   it('renders', () => {
     const expectedText = 'Hello, from Wibble and Wobble!';
-    const testProps : HelloProps = {
+    const testProps : IHelloProps = {
       compiler: 'Wibble',
       framework: 'Wobble'
     }
